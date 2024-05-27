@@ -1,0 +1,165 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "password-reset;successful-password-reset",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful password reset",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "steps/passwordResetSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2779697717
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I click the forgot password link",
+            "match": {
+              "location": "steps/passwordResetSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 553087052
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I enter a valid email address",
+            "match": {
+              "location": "steps/passwordResetSteps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206113239
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click the continue button",
+            "match": {
+              "location": "steps/passwordResetSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 440718785
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see a confirmation message",
+            "match": {
+              "location": "steps/passwordResetSteps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420807
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "password-reset;unsuccessful-password-with-invalid-email",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Unsuccessful password with invalid email",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am on the login page",
+            "match": {
+              "location": "steps/passwordResetSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1960886352
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click the forgot password link",
+            "match": {
+              "location": "steps/passwordResetSteps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 451637419
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter an invalid email address",
+            "match": {
+              "location": "steps/passwordResetSteps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212463740
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I click the continue button",
+            "match": {
+              "location": "steps/passwordResetSteps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 339897054
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see an error message",
+            "match": {
+              "location": "steps/passwordResetSteps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 587094
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "password-reset",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Password Reset",
+    "tags": [],
+    "uri": "features/password_reset.feature"
+  }
+]
