@@ -1,3 +1,4 @@
+// passwordResetSteps.js (Step Definitions)
 const {
   Given,
   When,
@@ -7,13 +8,12 @@ const {
   AfterAll,
 } = require("@cucumber/cucumber");
 const { chromium } = require("playwright");
-//import passwordResetPage from "./passwordResetPage";
+const PasswordResetPage = require("./passwordResetPage");
 
 let browser;
 let page;
-//let passwordResetPage;
+let passwordResetPage;
 
-// Set default timeout to 30 seconds to give more time for page to load and elements to appear
 setDefaultTimeout(30 * 1000);
 
 BeforeAll(async () => {
@@ -26,50 +26,30 @@ AfterAll(async () => {
 
 Given("I am on the login page", async function () {
   page = await browser.newPage();
-  await page.goto("https://membersvic.returnit.com.au/", {
-    waitUntil: "networkidle",
-  });
+  passwordResetPage = new PasswordResetPage(page);
+  await passwordResetPage.navigate();
 });
 
 When("I click the forgot password link", async function () {
-  await page
-    .getByRole(
-      "link",
-      { name: "Forgot password?" },
-      { waitUntil: "networkidle" }
-    )
-    .click();
-  //await page.waitForSelector('input[name="email"]', { timeout: 10000 }); // Wait for the email input to be visible
+  await passwordResetPage.clickForgotPasswordLink();
 });
 
 When("I enter a valid email address", async function () {
-  try {
-    await page.fill('input[name="email"]', "valid@example.com");
-  } catch (error) {
-    throw error;
-  }
+  await passwordResetPage.enterEmail("valid@example.com");
 });
 
 When("I enter an invalid email address", async function () {
-  try {
-    await page.fill('input[name="email"]', "invalid@example");
-  } catch (error) {
-    throw error;
-  }
+  await passwordResetPage.enterEmail("invalid@example");
 });
 
 When("I click the continue button", async function () {
-  try {
-    await page.getByRole("button", { name: "Continue" }).click();
-  } catch (error) {
-    throw error;
-  }
+  await passwordResetPage.clickContinueButton();
 });
 
 Then("I should see a confirmation message", async function () {
-  await page.getByText("Please check the email", { timeout: 10000 }); // Wait for the confirmation message to be visible
+  await passwordResetPage.checkConfirmationMessage();
 });
 
 Then("I should see an error message", async function () {
-  await page.getByText("Email is not valid.", { timeout: 10000 }); // Wait for the error message to be visible
+  await passwordResetPage.checkErrorMessage();
 });

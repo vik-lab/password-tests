@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2779697717
+              "duration": 2714721297
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "I click the forgot password link",
             "match": {
-              "location": "steps/passwordResetSteps.js:34"
+              "location": "steps/passwordResetSteps.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 553087052
+              "duration": 721897672
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 6,
             "name": "I enter a valid email address",
             "match": {
-              "location": "steps/passwordResetSteps.js:45"
+              "location": "steps/passwordResetSteps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 206113239
+              "duration": 117903398
             }
           },
           {
@@ -54,11 +54,11 @@
             "line": 7,
             "name": "I click the continue button",
             "match": {
-              "location": "steps/passwordResetSteps.js:61"
+              "location": "steps/passwordResetSteps.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 440718785
+              "duration": 311204203
             }
           },
           {
@@ -67,11 +67,11 @@
             "line": 8,
             "name": "I should see a confirmation message",
             "match": {
-              "location": "steps/passwordResetSteps.js:69"
+              "location": "steps/passwordResetSteps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 420807
+              "duration": 406353
             }
           }
         ],
@@ -95,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1960886352
+              "duration": 1921533975
             }
           },
           {
@@ -104,11 +104,11 @@
             "line": 12,
             "name": "I click the forgot password link",
             "match": {
-              "location": "steps/passwordResetSteps.js:34"
+              "location": "steps/passwordResetSteps.js:33"
             },
             "result": {
               "status": "passed",
-              "duration": 451637419
+              "duration": 494318275
             }
           },
           {
@@ -117,11 +117,11 @@
             "line": 13,
             "name": "I enter an invalid email address",
             "match": {
-              "location": "steps/passwordResetSteps.js:53"
+              "location": "steps/passwordResetSteps.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 212463740
+              "duration": 151093555
             }
           },
           {
@@ -130,11 +130,11 @@
             "line": 14,
             "name": "I click the continue button",
             "match": {
-              "location": "steps/passwordResetSteps.js:61"
+              "location": "steps/passwordResetSteps.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 339897054
+              "duration": 295667912
             }
           },
           {
@@ -143,11 +143,11 @@
             "line": 15,
             "name": "I should see an error message",
             "match": {
-              "location": "steps/passwordResetSteps.js:73"
+              "location": "steps/passwordResetSteps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 587094
+              "duration": 102974603
             }
           }
         ],
